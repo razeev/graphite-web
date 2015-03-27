@@ -89,6 +89,9 @@ class TimeSeries(list):
 
 # Data retrieval API
 def fetchData(requestContext, pathExpr):
+  #Rajesh Code Start here
+  pathExpr = pathExpr.replace('*','noway');
+  #Rajesh Code ENd here
 
   seriesList = []
   startTime = int( epoch( requestContext['startTime'] ) )
